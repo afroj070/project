@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ristration-form</title>
+    <link rel="stylesheet" href="">
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: sans-serif;
+        }
+        body{
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: #4070f4;
+        }
+        .container{
+            position: relative;
+            max-width: 900px;
+            width: 100%;
+            border-radius: 6px;
+            padding: 30px;
+            margin: 0 15px;
+            background-color: #fff;
+            box-shadow: 0 5px 10px rgba(0, 0, 0, 1);
+        }
+        .container header{
+            font-size: 20px;
+            font-weight: 600;
+            color: #000;
+        }
+        .container header::before{
+            content: "";
+            position: absolute;
+            left: 0px;
+            bottom: -2px;
+            height: 3px;
+            width: 27px;
+            background-color: #4070f4;
+        }
+        .container form{
+            position: relative;
+            margin-top: 16px;
+            min-height: 490px;
+            background-color: #fff;
+        }
+        .container form .datalist{
+            margin-top: 30px;
+        }
+        .container form .title{
+            display: block;
+            margin-bottom: 8px;
+            font-size: 16px;
+            font-weight: 400;
+            margin: 6px 0;
+            color: #333;
+        }
+        .container form .fields{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+        form .fields .input-field{
+            display: flex;
+            width: calc(100% / 3 - 15px);
+            /* background-color: red; */
+            flex-direction: column; 
+            margin: 4px 0;
+        }
+        .input-field label{
+            font-size: 12px;
+            font-weight: 500;
+            color: #2e2e2e;
+        }
+        .input-field input{
+            height: 42px;
+            margin: 8px 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>rigistration</header>
+        <form action="#">
+            <div class="form_fist">
+                <div class="delaile_personal">
+                    <samp class="tital">personal details</samp>
+                    <div class="fields">
+                        <div class="input-field">
+                            <label>Full Name</label>
+                            <input type="text" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Date of Birth</label>
+                            <input type="date" placeholder="Enter your name" required>
+                        </div>
+                        <div class="input-field">
+                            <label>Email</label>
+                            <input type="email" placeholder="Enter your Email" required>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </form>
+    </div>
+</body>
+</html>

@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>contact</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar{
+            background-color: rgb(100, 96, 96);
+            /* width: 434px; */
+            height: 100vh;
+        }
+        .sidebar nav{
+            padding: 14px;
+            height: 100vh;
+        }
+        .sidebar nav li{
+            list-style: none;
+            font-size: 30px;
+            padding: 33px 0;
+        }
+        .sidebar nav li a{
+            text-decoration: none;
+            color: white;
+        }
+        .main{
+            /* background-color: yellow; */
+            width: 90vw;
+        }
+        .container{
+            display: flex;
+        }
+        .infocontainer{
+            /* background-color: rgb(243, 154, 231); */
+            height: 58vh;
+            width: 80vw;
+            margin: 144px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        .devinfo{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .hello{
+            font-size: 86px;
+        }
+        .name{
+            font-size: 70px;
+            font-weight: bold;
+        }
+        .about{
+            font-size: 50px;
+        }
+        .moreabout{
+            font-size: 20px;
+            margin-top: 23px;
+            font-family: 'fira sans', sans-serif;
+        }
+        .buttons{
+            margin-top: 34px;
+        }
+        .buttons button{
+            padding: 9px 14PX;
+            border-radius: 22px;
+            color: white;
+            background-color: dimgrey;
+            font-weight: bold;
+            font-size: 21px;
+            margin: 0 3px;
+            cursor: pointer;
+        }
+        .devpic img{
+            /* width: 300px; */
+            height: 60vh;
+        }
+        .buttons button:hover{
+            color: white;
+            background-color: blue;
+        }
+        .contactform{
+            font-size: 23px;
+            margin: 6px 14px 7px 42px;
+            padding: 125px;
+            border: 5px solid black;
+            width: 400px;
+        }
+        .btn{
+            padding: 12px 36px 11px 34px;
+            border-radius: 22px;
+            color: white;
+            background-color: rgb(11, 10, 88);
+            font-weight: bold;
+            font-size: 11px;
+            margin: 0 3px;
+            cursor: pointer;
+        }
+        .btn:hover{
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+        <!-- Afroj -->
+        <nav>
+            <ul>
+                <li><a href="/HOME.HTML">HOME</a></li>
+                <li><a href="/MYINTERO.HTML">MYINTERO</a></li>
+                <li><a href="/SERVICES.HTML">SERVICES</a></li>
+                <li><a href="/BLOG.HTML">BLOG</a></li>
+                <li><a href="/contact.html">contact me</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="main">
+            <div class="contactform">
+                <form>
+                    <table>
+                        <tr>
+                            <td>Name :</td>
+                            <td>
+                                <input type="text" placeholder="Inter your name" id="fname">
+                            </td>
+                            <td>
+                                <span class="errors" id="name_error"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>password :</td>
+                            <td>
+                                <input type="password" placeholder="Inter your password" id="password">
+                            </td>
+                            <td>
+                                <span class="errors" id="password_error"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Number</td>
+                            <td>
+                                <input type="number" placeholder="Inter your number" id="number" id="number">
+                            </td>
+                            <td>
+                                <span class="errors" id="number_error"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>Email :</td>
+                            <td>
+                                <input type="email" placeholder="Inter your email" id="email">
+                            </td>
+                            <td>
+                                <span class="errors" id="email_error"></span>
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                <input type="Submit" value="Submit" onclick="validateform()" class="btn">
+                                <!-- <input type="Reset" value="Reset"> -->
+                            </td>
+                        </tr>                      
+                    </table>
+                </form>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>

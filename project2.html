@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>project 2</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css">
+    <style>
+        *{
+            margin: 0px;
+            padding: 0px;
+        }
+        .sidebar{
+            background-color: red;
+            height: 36rem;
+        }
+        .sidebar nav{
+            padding: 40px;
+            height: 100vh;
+        }
+        .sidebar nav li{
+            list-style: none;
+            font-size: 30px;
+            padding: 33px 0;
+        }
+        .sidebar nav li a{
+            text-decoration: none;
+            color: white;
+        }
+        .main{
+            /* background-color: yellow; */
+            width: 90vw;
+            padding: 25px;
+        }
+        .container{
+            display: flex;
+        }
+        .infocontainer{
+            height: 58vh;
+            width: 80vw;
+            margin: 144px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        .devinfo{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .hello{
+            font-size: 86px;
+        }
+        .name{
+            font-size: 70px;
+            font-weight: bold;
+        }
+        .about{
+            font-size: 50px;
+        }
+        .moreabout{
+            font-size: 20px;
+            margin-top: 23px;
+            font-family: 'fira sans', sans-serif;
+        }
+        .buttons{
+            margin-top: 34px;
+        }
+        .buttons button{
+            padding: 9px 14PX;
+            border-radius: 22px;
+            color: white;
+            background-color: dimgrey;
+            font-weight: bold;
+            font-size: 21px;
+            margin: 0 3px;
+            cursor: pointer;
+        }
+        .buttons button:hover{
+            color: rgb(102, 88, 182);
+            background-color: white;
+        }   
+        .devpic img{
+            height: 60vh;
+        }
+    
+    </style>
+</head>
+<body>
+    <div class="container">  
+        <div class="sidebar">
+            <nav>
+                <ul>
+                    <li><a href="home.html">HOME</a><i class="fa-brands fa-youtube"></i></li>
+                    <li><a href="MYINTERO.html">MYINTERO</a></li>
+                    <li><a href="SERVICES.html">SERVICES</a></li>
+                    <li><a href="BLOG.html">BLOG</a></li>
+                    <li><a href="contact.html">CONTACT ME</a></li>
+                </ul>
+            </nav>
+        </div>
+        <div class="main">
+            <div class="hambarger">
+                <img src="" alt="">
+            </div>
+            <div class="infocontainer">
+                <div class="devinfo">
+                    <div class="hello"> HI I AM</div>
+                    <div class="name">Rahul GADHI</div>
+                    <div class="about">Developer, Enterpeneur,Dancer</div>
+                    <div class="moreabout">I am developer, and i love drink coffee, i love in india , i love to visit New delhi to by some coffee.</div>
+                    <div class="buttons">
+                        <a href="cv.text">
+                        <button>DOWNLODE CV</button></a>
+                        <a href="contact.txt"><button>CONTACT ME</button></a>
+                    </div>
+                </div>
+                <div class="devpic"><img src="human.jpg" alt=""></div>
+            </div>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>new_web</title>
+    <style>
+        body{
+            width: 100%;
+        }
+        .logo{
+            width: 100px;
+            height: 50px;
+        }
+        #header{
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            padding: 20px 80px;
+            /* background-color: rgb(190, 211, 221); */
+            box-shadow: 0 5px rgba(0, 0, 0, 0);
+        }
+        #navbar{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+        #navbar li{
+            list-style: none;
+            padding: 0px 20px;
+            position: relative;
+        }
+        #navbar li a{
+            text-decoration: none;
+            font-size: 16px;
+            font-weight: 600;
+            color: black;
+            transition: 0.3s ease;
+        }
+        #navbar li :hover,
+        #navbar li a.active{
+            color: #088178;
+        }
+        #navbar li a.active::after{
+            content: "";
+            width: 30px;
+            height: 2px;
+            background-color: #088178;
+            position: absolute;
+            bottom: -4px;
+            left: 20px;
+        }
+        #hero{
+            /* background-image: url("img/hero4.png"); */
+            /* background-color: turquoise; */
+            height: 90vh;
+            width: 100%;
+            /* background-size: cover; */
+            /* background-position: top 25% right 0; */
+            /* padding: 20px; */
+            /* display: flex; */
+            /* align-items: flex-start; */
+            /* justify-content: center; */
+            margin:  9px 9px 0px 9px;
+        }
+    </style>
+</head>
+<body>
+    <section id="header">
+        <a href="#"><img src="logo.jpg" class="logo" alt=""></a>
+
+        <div>
+            <ul id="navbar">
+                <li><a class="active" href="Home.html">Home</a></li>  
+                <li><a href="shop.html">Shop</a></li>
+                <li><a href="blog.html">Blog</a></li>
+                <li><a href="about.html">About</a></li>
+                <li><a href="contact.html">Contact</a></li>
+                <li><a href=""><ion-icon name="logo-facebook"></ion-icon></a></li>
+            </ul>
+        </div>
+    </section>
+    <section>
+        <section id="hero">
+            <h4>Trade-in-offer</h4>
+            <h2>Super value deals</h2>
+            <h1>On all products</h1>
+            <p>Save with coupons & up to 70% off!</p>
+            <button>Shop Now</button>
+        </section>
+    </section>
+</body>
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+</html>

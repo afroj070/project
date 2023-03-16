@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .sidebar{
+            background-color: rgb(100, 96, 96);
+            /* width: 434px; */
+            height: 100vh;
+        }
+        .sidebar nav{
+            padding: 14px;
+            height: 100vh;
+        }
+        .sidebar nav li{
+            list-style: none;
+            font-size: 30px;
+            padding: 33px 0;
+        }
+        .sidebar nav li a{
+            text-decoration: none;
+            color: white;
+        }
+        .main{
+            /* background-color: yellow; */
+            width: 90vw;
+        }
+        .container{
+            display: flex;
+        }
+        .infocontainer{
+            /* background-color: rgb(243, 154, 231); */
+            height: 58vh;
+            width: 80vw;
+            margin: 144px auto;
+            display: flex;
+            justify-content: space-around;
+        }
+        .devinfo{
+            display: flex;
+            justify-content: center;
+            flex-direction: column;
+        }
+        .hello{
+            font-size: 86px;
+        }
+        .name{
+            font-size: 70px;
+            font-weight: bold;
+        }
+        .about{
+            font-size: 50px;
+        }
+        .moreabout{
+            font-size: 20px;
+            margin-top: 23px;
+            font-family: 'fira sans', sans-serif;
+        }
+        .buttons{
+            margin-top: 34px;
+        }
+        .buttons button{
+            padding: 9px 14PX;
+            border-radius: 22px;
+            color: white;
+            background-color: dimgrey;
+            font-weight: bold;
+            font-size: 21px;
+            margin: 0 3px;
+            cursor: pointer;
+        }
+        .devpic img{
+            /* width: 300px; */
+            height: 60vh;
+        }
+        .buttons button:hover{
+            color: white;
+            background-color: blue;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="sidebar">
+        <!-- Afroj -->
+        <nav>
+            <ul>
+                <li><a href="/HOME.HTML">HOME</a></li>
+                <li><a href="/MYINTERO.HTML">MYINTERO</a></li>
+                <li><a href="/SERVICES.HTML">SERVICES</a></li>
+                <li><a href="/BLOG.HTML">BLOG</a></li>
+                <li><a href="BLOG.html">contact me</a></li>
+            </ul>
+        </nav>
+        </div>
+        <div class="main">
+            <div class="infocontainer">
+                <div class="devinfo">
+                    <div class="hello"> HI I AM</div>
+                    <div class="name">Rahul GADHI</div>
+                    <div class="about">Developer, Enterpeneur,Dancer</div>
+                    <div class="moreabout">I am developer, and i love drink coffee, i love in india , i love to visit New delhi to by some coffee.</div>
+                    <div class="buttons">
+                        <button>DOWNLODE CV</button>
+                        <button>CONTACT ME</button>
+                    </div>
+                </div>
+                <div class="devpic"><img src="human.jpg" alt=""></div>
+            </div>
+        </div>
+    </div> 
+</body>
+</html>
